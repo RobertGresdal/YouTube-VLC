@@ -1,0 +1,17 @@
+{
+	"name": "Open in VLC",
+	"version": "0.2",
+	"manifest_version": 2,
+	"description": "Adds a button to YouTube that points to a vlc protocol. If registered on a users page, it will attempt to open the VideoLAN player",
+	"developer": {
+		"name": "Robert Gresdal",
+		"url": "http://gresdal.no/robert/?p=22"
+	},
+	"content_scripts": [
+		{
+			"matches":["http://www.youtube.com/watch?*","https://www.youtube.com/watch?*"],
+			"js":["myscript.js"],
+			"run_at":"document_end"
+		}
+	]
+}
